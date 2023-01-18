@@ -14,8 +14,10 @@ if (what == "+") {
                 alert (Number(first) / Number(second));
 } else if (what == "%") {
         alert (Number(first) % Number(second));
-} else if (Number(first) === NaN) {
-        alert ("that is not a number");
-} else {
-    alert ("this is not a number");
+} 
+
+if (typeof first === "string") {
+        alert ("pierwsza liczba is not a number");
+} else if (typeof second === "string") {
+        alert ("druga liczba is not a number");
 }
